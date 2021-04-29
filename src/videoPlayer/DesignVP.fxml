@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="videoPlayer.Controller">
+   <children>
+      <BorderPane layoutX="-3.0" layoutY="-2.0" prefHeight="400.0" prefWidth="606.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#OpenFile_ActionButton" text="Open File" />
+                        <MenuItem mnemonicParsing="false" text="Open  Multiple Files" />
+                        <MenuItem mnemonicParsing="false" onAction="#Quit_ActionButton" text="Quit" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Max" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Audio">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Audio Device" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Video">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Full Screen" />
+                        <MenuItem mnemonicParsing="false" text="Fit Window" />
+                        <MenuItem mnemonicParsing="false" text="Aspect Ratio" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Subtitle">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Add subtitle" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Tools">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Configuration" />
+                        <MenuItem mnemonicParsing="false" text="Program" />
+                        <MenuItem mnemonicParsing="false" text="Preferences" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Help" />
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane layoutX="-3.0" layoutY="-3.0" prefHeight="103.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <top>
+                        <Slider fx:id="progress_slider_id" BorderPane.alignment="CENTER" />
+                     </top>
+                     <bottom>
+                        <HBox prefHeight="41.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button fx:id="previous_Button_id" mnemonicParsing="false" onAction="#Previous_ActionButton" text="pev" />
+                              <Button fx:id="play_Button_id" mnemonicParsing="false" onAction="#Play_ActionButton" text="Play" />
+                              <Button fx:id="next_Button_id" mnemonicParsing="false" onAction="#Next_ActionButton" text="next" />
+                              <Button fx:id="mute_Button_id" mnemonicParsing="false" onAction="#Mute_ActionButton" text="mute" />
+                              <Slider fx:id="sound_slider_id" />
+                           </children>
+                           <BorderPane.margin>
+                              <Insets top="10.0" />
+                           </BorderPane.margin>
+                        </HBox>
+                     </bottom>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <MediaView fx:id="mediaView_id" fitHeight="200.0" fitWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
