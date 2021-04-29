@@ -15,7 +15,7 @@ import javafx.scene.media.MediaView;
 public class Controller implements Initializable {
 
     MediaPlayer player;
-    
+
     @FXML
     private Slider progress_slider_id;
 
