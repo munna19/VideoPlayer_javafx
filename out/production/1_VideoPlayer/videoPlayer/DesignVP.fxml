@@ -75,7 +75,7 @@
                               <Button fx:id="previous_Button_id" mnemonicParsing="false" onAction="#Previous_ActionButton" />
                               <Button fx:id="play_Button_id" mnemonicParsing="false" onAction="#Play_ActionButton" />
                               <Button fx:id="next_Button_id" mnemonicParsing="false" onAction="#Next_ActionButton" />
-                              <Button fx:id="mute_Button_id" mnemonicParsing="false" onAction="#Mute_ActionButton" text="mute" />
+                              <Button fx:id="mute_Button_id" mnemonicParsing="false" onAction="#Mute_ActionButton" />
                               <Slider fx:id="sound_slider_id" />
                            </children>
                            <BorderPane.margin>
