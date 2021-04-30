@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.media.MediaView?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="videoPlayer.Controller">
    <children>
       <BorderPane layoutX="-3.0" layoutY="-2.0" prefHeight="400.0" prefWidth="606.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -74,7 +73,7 @@
                         <HBox prefHeight="41.0" prefWidth="600.0" BorderPane.alignment="CENTER">
                            <children>
                               <Button fx:id="previous_Button_id" mnemonicParsing="false" onAction="#Previous_ActionButton" text="pev" />
-                              <Button fx:id="play_Button_id" mnemonicParsing="false" onAction="#Play_ActionButton" text="Play" />
+                              <Button fx:id="play_Button_id" mnemonicParsing="false" onAction="#Play_ActionButton" />
                               <Button fx:id="next_Button_id" mnemonicParsing="false" onAction="#Next_ActionButton" text="next" />
                               <Button fx:id="mute_Button_id" mnemonicParsing="false" onAction="#Mute_ActionButton" text="mute" />
                               <Slider fx:id="sound_slider_id" />
