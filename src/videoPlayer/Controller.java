@@ -163,7 +163,10 @@ public class Controller implements Initializable {
 
     @FXML
     void Next_ActionButton(ActionEvent event) {
-
+        //for duration forward
+        double d = player.getCurrentTime().toSeconds();
+        d = d + 10;
+        player.seek(new Duration(d * 1000));
     }
 
 
