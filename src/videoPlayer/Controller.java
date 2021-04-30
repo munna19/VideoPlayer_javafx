@@ -1,5 +1,7 @@
 package videoPlayer;
 
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.DoubleProperty;
 import javafx.beans.value.ChangeListener;
@@ -130,6 +132,15 @@ public class Controller implements Initializable {
                     //player.seek(new Duration(slider_value*1000));
                     player.seek(new Duration(slider_value * 60 * 1000)); // for minute
                 }
+            }
+        });
+
+        //volume slider
+        sound_slider_id.setValue(player.getVolume() * 100);
+        sound_slider_id.valueProperty().addListener(new InvalidationListener() {
+            @Override
+            public void invalidated(Observable observable) {
+                player.setVolume(sound_slider_id.getValue() / 100);
             }
         });
 
