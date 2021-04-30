@@ -186,6 +186,13 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        try {
+            play_Button_id.setGraphic(new ImageView(new Image(new FileInputStream("src/icons/play.png"))));
+            previous_Button_id.setGraphic(new ImageView(new Image(new FileInputStream("src/icons/previous.png"))));
+            next_Button_id.setGraphic(new ImageView(new Image(new FileInputStream("src/icons/next.png"))));
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }

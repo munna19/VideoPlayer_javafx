@@ -72,9 +72,9 @@
                      <bottom>
                         <HBox prefHeight="41.0" prefWidth="600.0" BorderPane.alignment="CENTER">
                            <children>
-                              <Button fx:id="previous_Button_id" mnemonicParsing="false" onAction="#Previous_ActionButton" text="pev" />
+                              <Button fx:id="previous_Button_id" mnemonicParsing="false" onAction="#Previous_ActionButton" />
                               <Button fx:id="play_Button_id" mnemonicParsing="false" onAction="#Play_ActionButton" />
-                              <Button fx:id="next_Button_id" mnemonicParsing="false" onAction="#Next_ActionButton" text="next" />
+                              <Button fx:id="next_Button_id" mnemonicParsing="false" onAction="#Next_ActionButton" />
                               <Button fx:id="mute_Button_id" mnemonicParsing="false" onAction="#Mute_ActionButton" text="mute" />
                               <Slider fx:id="sound_slider_id" />
                            </children>
