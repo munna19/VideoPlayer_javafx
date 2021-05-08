@@ -197,6 +197,13 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        /*play_Button_id.setMinHeight(5);
+        play_Button_id.setMaxHeight(5);
+        play_Button_id.setMinWidth(5);
+        play_Button_id.setMaxWidth(5);
+         */
+
         try {
             play_Button_id.setGraphic(new ImageView(new Image(new FileInputStream("src/icons/play.png"))));
             previous_Button_id.setGraphic(new ImageView(new Image(new FileInputStream("src/icons/previous.png"))));

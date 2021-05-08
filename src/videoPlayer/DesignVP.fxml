@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.media.MediaView?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="videoPlayer.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="videoPlayer.Controller">
    <children>
       <BorderPane layoutX="-3.0" layoutY="-2.0" prefHeight="400.0" prefWidth="606.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
@@ -70,13 +70,13 @@
                         <Slider fx:id="progress_slider_id" BorderPane.alignment="CENTER" />
                      </top>
                      <bottom>
-                        <HBox prefHeight="41.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                        <HBox alignment="CENTER" prefHeight="41.0" prefWidth="600.0" spacing="5.0" BorderPane.alignment="CENTER">
                            <children>
                               <Button fx:id="previous_Button_id" mnemonicParsing="false" onAction="#Previous_ActionButton" />
-                              <Button fx:id="play_Button_id" mnemonicParsing="false" onAction="#Play_ActionButton" />
+                              <Button fx:id="play_Button_id" mnemonicParsing="false" onAction="#Play_ActionButton" styleClass="play_button" stylesheets="@style.css" />
                               <Button fx:id="next_Button_id" mnemonicParsing="false" onAction="#Next_ActionButton" />
                               <Button fx:id="mute_Button_id" mnemonicParsing="false" onAction="#Mute_ActionButton" />
-                              <Slider fx:id="sound_slider_id" />
+                              <Slider fx:id="sound_slider_id" prefHeight="14.0" prefWidth="104.0" />
                            </children>
                            <BorderPane.margin>
                               <Insets top="10.0" />
