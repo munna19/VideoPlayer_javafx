@@ -6,7 +6,7 @@
 -fx-height:50px;
 -fx-weight:5px;
 -fx-color:green;
--fx-image:url('src/icons/play1.png');
+-fx-background-color: #d1cdcd;
 }
 /*.button img {
   -fx-width: 10px;
@@ -23,7 +23,6 @@
  /* Style buttons */
 .button {
   /*-fx-background-color: DodgerBlue; /* Blue background */
-  -fx-background-icons:url('src/icons/play1');
   -fx-border: none; /* Remove borders */
   -fx-color: white; /* White text */
   -fx-padding: 12px 16px; /* Some padding */
