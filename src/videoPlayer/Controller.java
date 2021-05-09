@@ -26,6 +26,12 @@ import javafx.scene.media.MediaView;
 import javafx.stage.FileChooser;
 import javafx.util.Duration;
 
+/*
+     #####     #####     #####
+     @author: Abdul Al Mamun (Munna)
+     #####     #####     #####
+*/
+
 public class Controller implements Initializable {
 
     MediaPlayer player;
