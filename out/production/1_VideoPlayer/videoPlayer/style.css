@@ -1,3 +1,9 @@
+/*
+     #####     #####     #####
+     @author: Abdul Al Mamun (Munna)
+     #####     #####     #####
+*/
+
 #play_button{
 -fx-color:red;
 }
@@ -23,7 +29,6 @@
  /* Style buttons */
 .button {
   /*-fx-background-color: DodgerBlue; /* Blue background */
-  -fx-background-icons:url('src/icons/play1');
   -fx-border: none; /* Remove borders */
   -fx-color: white; /* White text */
   -fx-padding: 12px 16px; /* Some padding */

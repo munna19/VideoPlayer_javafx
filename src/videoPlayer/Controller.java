@@ -35,6 +35,7 @@ import javafx.util.Duration;
 public class Controller implements Initializable {
 
     MediaPlayer player;
+    double value;
 
     @FXML
     private Slider progress_slider_id;
@@ -147,8 +148,11 @@ public class Controller implements Initializable {
             @Override
             public void invalidated(Observable observable) {
                 player.setVolume(sound_slider_id.getValue() / 100);
+                value = sound_slider_id.getValue();
+                System.out.println(value);
             }
         });
+
 
 
     }
@@ -174,7 +178,16 @@ public class Controller implements Initializable {
     }
 
     @FXML
-    void Mute_ActionButton(ActionEvent event) {
+    void Mute_ActionButton(ActionEvent event) throws FileNotFoundException {
+        //if(sound_slider_id.getValue() != 0)
+        if(value != 0){
+            sound_slider_id.setValue(player.getVolume() * 0);
+            mute_Button_id.setGraphic(new ImageView(new Image(new FileInputStream("src/icons/mute.png"))));
+        }
+        else  {
+            sound_slider_id.setValue(100);
+            mute_Button_id.setGraphic(new ImageView(new Image(new FileInputStream("src/icons/volume.png"))));
+        }
 
     }
 
