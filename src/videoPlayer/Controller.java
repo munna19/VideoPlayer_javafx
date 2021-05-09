@@ -1,5 +1,6 @@
 package videoPlayer;
 
+import javafx.application.Platform;
 import javafx.beans.InvalidationListener;
 import javafx.beans.Observable;
 import javafx.beans.binding.Bindings;
@@ -210,7 +211,7 @@ public class Controller implements Initializable {
 
     @FXML
     void Quit_ActionButton(ActionEvent event) {
-
+        Platform.exit();
     }
 
 
