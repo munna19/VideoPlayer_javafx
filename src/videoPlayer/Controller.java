@@ -149,7 +149,7 @@ public class Controller implements Initializable {
             public void invalidated(Observable observable) {
                 player.setVolume(sound_slider_id.getValue() / 100);
                 value = sound_slider_id.getValue();
-                System.out.println(value);
+                //System.out.println(value);
             }
         });
 
