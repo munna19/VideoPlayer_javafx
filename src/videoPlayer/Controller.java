@@ -181,7 +181,7 @@ public class Controller implements Initializable {
     @FXML
     void Mute_ActionButton(ActionEvent event) throws FileNotFoundException {
         //if(sound_slider_id.getValue() != 0)
-        if(value != 0){
+        if(value != 0 || sound_slider_id.getValue() != 0){
             sound_slider_id.setValue(player.getVolume() * 0);
             mute_Button_id.setGraphic(new ImageView(new Image(new FileInputStream("src/icons/mute.png"))));
         }
